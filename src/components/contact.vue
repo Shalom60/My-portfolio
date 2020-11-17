@@ -3,7 +3,7 @@
     <v-layout wrap my-8 xs2>
       <v-flex>
         <v-card-actions>
-          <v-btn dark rounded href="'mailto:shalomjsph@gmail.com'">
+          <v-btn dark rounded href="mailto: shalomjsph@gmail.com">
             <v-icon class="blue--text"> mdi-gmail </v-icon>
           </v-btn>
         </v-card-actions>
@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  props: []
+  props: [],
 };
 </script>
 

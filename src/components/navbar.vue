@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <v-app-bar flat dense dark app>
+    <v-app-bar dark dense app>
       <v-spacer> </v-spacer>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
@@ -36,21 +36,21 @@ export default {
         {
           icon: "mdi-account-question",
           text: "About Me",
-          route: "#about"
+          route: "#about",
         },
         {
           icon: "mdi-clipboard-file",
           text: "My Projects",
-          route: "#projects"
+          route: "#projects",
         },
         {
           icon: "mdi-card-account-mail",
           text: "Contact Me",
-          route: "'mailto:shalomjsph@gmail.com'"
-        }
-      ]
+          route: "mailto:shalomjsph@gmail.com",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
