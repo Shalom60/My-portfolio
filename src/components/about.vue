@@ -8,9 +8,9 @@
         Certified google fundamental digital marketer. An enthusiast of
         everything tech, recently ventured into web development, started with an
         internship at Start.ng on March 2020, learnt the basics of web
-        development using HTML5, CSS, JavaScript and PHP for the backend, built
-        an authentication system for a hospital like website, graduated and
-        thereafter started Hngi7 internship.<br />
+        development using HTML5, CSS, JavaScript and PHP, did different frontend
+        tasks and built an authentication system for a hospital-like website,
+        graduated and thereafter started Hngi7 internship.<br />
         I also partook in the 2020 Google/Andela #Buildforsdg 2020 challenge,
         where i mostly helped with my technical skills. I make use of some
         technologies and frameworks such as these.
@@ -37,43 +37,43 @@ export default {
       techs: [
         {
           name: "Vue",
-          icon: "mdi-vuejs"
+          icon: "mdi-vuejs",
         },
         {
           name: "Vuetify",
-          icon: "mdi-vuetify"
+          icon: "mdi-vuetify",
         },
         {
           name: "Laravel",
-          icon: "mdi-laravel"
+          icon: "mdi-laravel",
         },
         {
           name: "MySQL",
-          icon: "mdi-database"
+          icon: "mdi-database",
         },
         {
           name: "Javascript",
-          icon: "mdi-language-javascript"
+          icon: "mdi-language-javascript",
         },
         {
           name: "Nuxt",
-          icon: "mdi-nuxt"
+          icon: "mdi-nuxt",
         },
         {
           name: "Material Design",
-          icon: "mdi-material-design"
+          icon: "mdi-material-design",
         },
         {
           name: "DevOps(Heroku)",
-          icon: "mdi-cloud"
+          icon: "mdi-cloud",
         },
         {
           name: "Github",
-          icon: "mdi-github"
-        }
-      ]
+          icon: "mdi-github",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 
