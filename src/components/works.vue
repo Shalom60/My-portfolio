@@ -11,7 +11,7 @@
             <div class="grey--text">{{ project.describe }}</div>
           </v-card-text>
           <v-card-actions>
-            <v-btn :href="project.github" class="text-none">
+            <v-btn v-if="project.github" :href="project.github" class="text-none">
               <v-icon left>mdi-github </v-icon><span>Github </span>
             </v-btn>
             <v-spacer> </v-spacer>
@@ -19,7 +19,7 @@
               <v-icon left>mdi-web</v-icon><span>Live </span>
             </v-btn>
             <v-btn v-else class="text-none">
-              <v-icon left>mdi-pencil </v-icon><span> In development</span>
+              <v-icon left>mdi-pencil </v-icon><span> under development</span>
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -39,23 +39,29 @@ export default {
           describe:
             "A quiz web application created with Vue.js and VueBootstrap, the questions are gotten from an API question database and are randomly shuffled on rendering.",
           github: "https://github.com/Shalom60/fancy-quiz-app",
-          live: "https://pappy-fancy-quiz-app.herokuapp.com/"
+          live: "https://pappy-fancy-quiz-app.herokuapp.com/",
         },
         {
           name: "LSP API",
-          describe: "An API for a church website backend using Laravel.",
-          github: "https://github.com/Shalom60/LSP-API/tree/master"
+          describe: "An API for a website using Laravel.",
+          github: "https://github.com/Shalom60/LSP-API/tree/master",
         },
         {
           name: "Transcript & GPA Builder",
           describe:
             "A web application that takes necessary data from students and calculates the GPA of each year in a trancript format.",
           github:
-            "https://github.com/Shalom60/Transcript-GPA-Builder-Uniben-/tree/master"
-        }
-      ]
+            "https://github.com/Shalom60/Transcript-GPA-Builder-Uniben-/tree/master",
+        },
+        {
+          name: "Arcadia",
+          describe:
+            "Frontend Engineer at the Saucecode2020 Hackathon. A web application that links students with tutors.",
+          live: "https://arcadialive.netlify.app/",
+        },
+      ],
     };
-  }
+  },
 };
 </script>
 

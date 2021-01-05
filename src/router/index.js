@@ -1,8 +1,10 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import About from "../components/about.vue";
-import Contact from "../components/contact.vue";
 import Works from "../components/works.vue";
+import start from '../views/start.vue';
+import d_m from '../views/d_m.vue';
+import sdg from '../views/sdg.vue';
 
 Vue.use(VueRouter);
 
@@ -11,8 +13,19 @@ const routes = [
     path: "/"
   },
   {
-    path: "/contact",
-    component: Contact
+    path: "/start",
+    name: 'start',
+    component: start
+  },
+  {
+    path: "/d_m",
+    name: 'd_m',
+    component: d_m
+  },
+  {
+    path: "/sdg",
+    name: 'sdg',
+    component: sdg
   },
   {
     path: "/works",

@@ -1,21 +1,17 @@
 <template>
   <div id="contact">
-    <v-layout wrap my-8 xs2>
-      <v-flex>
+    <v-layout wrap my-8>
+      <v-flex row xs6 class="media">
         <v-card-actions>
           <v-btn dark rounded href="mailto: shalomjsph@gmail.com">
             <v-icon class="blue--text"> mdi-gmail </v-icon>
           </v-btn>
         </v-card-actions>
-      </v-flex>
-      <v-flex>
         <v-card-actions>
           <v-btn dark rounded href="https://twitter.com/J_bowlu?s=09">
             <v-icon class="blue--text"> mdi-twitter </v-icon>
           </v-btn>
         </v-card-actions>
-      </v-flex>
-      <v-flex>
         <v-card-actions>
           <v-btn
             dark
@@ -25,8 +21,6 @@
             <v-icon class="blue--text"> mdi-linkedin </v-icon>
           </v-btn>
         </v-card-actions>
-      </v-flex>
-      <v-flex>
         <v-card-actions>
           <v-btn dark rounded href="https://github.com/Shalom60">
             <v-icon class="blue--text"> mdi-github </v-icon>
@@ -51,4 +45,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.media {
+  margin-left: 30%;
+}
+</style>

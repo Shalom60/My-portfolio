@@ -3,16 +3,19 @@
     <v-card class="mx-auto my-5" dark color="grey--text" shaped>
       <v-card-title> Bio </v-card-title>
       <v-card-text class="text-md-60px"
-        >Student in the Department of Computer Engineering at the University of
-        Benin. <br />
-        Certified google fundamental digital marketer. An enthusiast of
-        everything tech, recently ventured into web development, started with an
-        internship at Start.ng on March 2020, learnt the basics of web
-        development using HTML5, CSS, JavaScript and PHP, did different frontend
-        tasks and built an authentication system for a hospital-like website,
-        graduated and thereafter started Hngi7 internship.<br />
-        I also partook in the 2020 Google/Andela #Buildforsdg 2020 challenge,
-        where i mostly helped with my technical skills. I make use of some
+        >Student in the Department of Computer Engineering at the University of Benin.
+        <br />
+        Certified google fundamental
+        <v-btn rounded class="text-none blue--text" href="d_m">digital marketer</v-btn>,
+        an enthusiast of everything tech, recently ventured into web development, started
+        with an internship at
+        <v-btn rounded class="text-none blue--text" href="start"> Start.ng </v-btn> on
+        March 2020, learnt the basics of web development using HTML5, CSS, JavaScript and
+        PHP, did different frontend tasks and built an authentication system for a
+        hospital-like website, graduated and thereafter started Hngi7 internship.<br />
+        I also partook in the 2020 Google/Andela
+        <v-btn rounded class="text-none blue--text" href="sdg">#Buildforsdg </v-btn> 2020
+        challenge, where i mostly helped with my technical skills. I make use of some
         technologies and frameworks such as these.
       </v-card-text>
       <v-layout row wrap>
@@ -31,7 +34,8 @@
 
 <script>
 export default {
-  props: [],
+  components: {},
+  props: ["stat"],
   data() {
     return {
       techs: [
@@ -73,6 +77,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    start() {
+      window.location.href = "start";
+    },
   },
 };
 </script>
